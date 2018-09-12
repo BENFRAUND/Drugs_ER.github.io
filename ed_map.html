@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Drugs and ED Utilization</title>
+
+  <!-- Latest CSS   -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="logo"><img class="navbar-brand" style="padding:2px 0px 2px 5px" src="Images/drug-icon-2316244_1280.png" alt="logo"><a class="navbar-brand" href="index.html">Drugs and the ER<small>In the Age of Cannabis Deregulation</small></a></span>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="divider"></li>
+          <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="income.html">Income vs ER Use</a></li>
+                <li><a href="insurance.html">Income vs Insurance</a></li>
+                <li><a href="opioids_er.html">Opioids vs ER Use</a></li>
+                <li><a href="opioids_mort.html">Opioids vs Mortality Rate</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="opioid_map.html">Opioid Use vs Cannabis Retailers</a></li>
+                <li class="active"><a href="ed_map.html">ED Use vs Cannabis Retailers</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.htm">Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 box">
+        <h2>California Emergency Room Utilization vs. Licensed Cannabis Retail Locations </h2>
+        <div class="pull-left"><img height=50%;  style="padding: 5px" src="Images/ED_Visits_vs_Cannabis_Retail_Locs.png" alt="Income vs. Insurance"></div>
+        
+        <p>This heat map shows areas with high levels of Emergency Room utilization.  The ER patterns do seem to follow
+          a similar pattern as the prevalence of cannabis retailers.  This pattern may simply reflect
+          a higher density in large population centers, although the emergency room heat map is a rate
+          so it adjusts for population density.
+        </p>
+        <p>2016 was the most recent data available for this study.  It will be interesting to continue to monitor
+          the relationships between opioid use, cannabis use and emergency room use over the next few years as California
+          continues to deregulate cannabis.
+        </p>
+          
+      </div>
+      <div class="col-md-4 box">
+          <div class="row">
+          <h2>Visualizations</h2>
+          <a href="income.html">
+          <img class="image-thumbnail" style='margin: 0px 10px 10px' width=44%; src="Images/Median Income and ED Utilization.png" alt="...">
+          </a>
+          <a href="insurance.html">
+          <img class="image-thumbnail" style='margin: 0px 10px 10px' width=44%; src="Images/Median Income and Pct Insured.png" alt="...">
+          </a>
+          <a href="opioids_er.html">
+          <img class="image-thumbnail" style='margin: 0px 10px 10px' width=44%; src="Images/Opioid Use and ED utilization.png" alt="...">
+          </a>
+          <a href="opioids_mort.html">
+          <img class="image-thumbnail" style='margin: 0px 10px 10px' width=44%; src="Images/Opioid Use and Mortality Rates.png" alt="...">
+          </a>
+          <a href="opioid_map.html">
+          <img class="image-thumbnail" style='margin: 0px 10px 10px' width=44%; src="Images/Opioid_Heat_vs_Cannabis_Retail_Locs_sm.png" alt="...">
+          </a>
+          <a href="ed_map.html">
+          <img class="image-thumbnail" style='margin: 0px 10px 10px; border:5px solid #4482bb' width=44%; src="Images/ED_Visits_vs_Cannabis_Retail_Locs.png" alt="...">
+          </a>
+              
+        
+        </div>
+       
+      </div>
+      
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+<footer style="background-color: #667480" style="color: #fff">
+    <hr style="border: 2px solid #4482bb">
+      Ben Fraund 2018
+    </footer>
+</html>
